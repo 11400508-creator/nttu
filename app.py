@@ -12,48 +12,71 @@ st.set_page_config(
     page_title="WAG AA Final Dashboard",
     layout="wide"
 )
+
 img = get_base64("picture.png")
 st.markdown(f"""
 <style>
+
 .hero {{
     background-image:
         linear-gradient(
-            rgba(0,0,0,0.45),
-            rgba(0,0,0,0.45)
+            rgba(0,0,0,0.55),
+            rgba(0,0,0,0.55)
         ),
-        url("data:image/jpg;base64,{img}");
+        url("data:image/png;base64,{img}");
 
     background-size: cover;
     background-position: center;
 
-    height: 500px;
+    height: 420px;
 
     border-radius: 20px;
 
     display:flex;
     flex-direction:column;
+
     justify-content:center;
     align-items:center;
 
-    margin-bottom:20px;
+    text-align:center;
 
-    color:white;
+    margin-bottom:25px;
 }}
 
 .hero h1 {{
-    font-size:55px;
-    font-weight:bold;
+    color:white;
+    font-size:58px;
+    font-weight:800;
+}}
+
+.hero h2 {{
+    color:white;
+    font-size:26px;
 }}
 
 .hero p {{
-    font-size:24px;
+    color:white;
+    font-size:20px;
 }}
+
 </style>
 
 <div class="hero">
-    <h1>Women's Artistic Gymnastics</h1>
-    <p>All-Around Final Dashboard</p>
-    <p>Data Visualization Project</p>
+
+<h1>
+Women's Artistic Gymnastics
+</h1>
+
+<h2>
+All-Around Final Dashboard
+</h2>
+
+<p>
+林宸妤：女子競技體操個人全能決賽成績視覺化分析
+</p>
+
+
+
 </div>
 
 """, unsafe_allow_html=True)
